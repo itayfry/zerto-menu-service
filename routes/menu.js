@@ -23,7 +23,7 @@ function _createMenuItem(menu_item, menu) {
     });
 }
 
-function _(menu) {
+function _createMenuItems(menu) {
     if (typeof(menu.items) !== 'undefined') {
         menu.items.forEach(function(menu_item) {
             createMenuItem(menu_item);
