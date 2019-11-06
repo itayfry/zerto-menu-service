@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  - var title = "Menus"
+  h1= title
+  p Welcome to #{title}
+  form(name="add-menu", method="post", action="/menu")
+    div.input
+      span.label Add Menu
+      input(type="text", name="content")
+    div.actions
+        input(type="submit", value='add')
